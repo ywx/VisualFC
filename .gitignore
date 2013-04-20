@@ -1,0 +1,49 @@
+# Lines starting with '#' are considered comments.
+# Ignore any file named .gitignore.
+#.gitignore
+# .ncb 无编译浏览文件(no compile browser),build编译工程后会自动生成,,  支持ClassView
+*.ncb
+# .suo (solution user opertion) 解决方案用户选项记录所有将与解决方案建立关联的选项
+*.suo
+# .opt 保存工作空间的配置
+*.opt
+# .plg
+*.plg
+# .clw 支持ClassWizard
+*.clw
+# .bsc The browser code file
+*.bsc
+# .sdf The browsing database file
+*.sdf
+# .filters The filters file
+*.filters
+# .user The migration user file
+*.user
+# .aps 支持ResourceView
+*.aps
+# Ignore objects and build.
+*.obj
+# .res
+*.res
+# .pch 是预编译头文件的数据库
+*.pch
+# .idb 用于元数据存取的
+*.idb
+*.dep
+# .pdb（程序数据库）文件保持着调试和项目状态信息，从而可以对程序的调试配置进行增量链接
+*.pdb
+# .ilk Incremental link file
+*.ilk
+# .dbp Database project file
+*.dbp
+# .map A text file containing linker information
+*.map
+# .sbr
+*.sbr
+# .tlb
+*.tlb
+# .exp
+*.exp
+# CodeBlock Project file
+*.depend
+*.layout

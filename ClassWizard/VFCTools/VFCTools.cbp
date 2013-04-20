@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="VFCTools" />
+		<Option pch_mode="2" />
+		<Option compiler="microsoft_visual_c_2002" />
+		<Build>
+			<Target title="Win32 Release">
+				<Option output="../bin/VFCTools" prefix_auto="1" extension_auto="1" />
+				<Option object_output="Release" />
+				<Option type="0" />
+				<Option compiler="microsoft_visual_c_2002" />
+				<Compiler>
+					<Add option="/MT" />
+					<Add option="/GX" />
+					<Add option="/O2" />
+					<Add option="/W3" />
+					<Add option="/FD" />
+					<Add option="/FR" />
+					<Add option="/DWIN32" />
+					<Add option="/DNDEBUG" />
+					<Add option="/D_WINDOWS" />
+					<Add option="/D_MBCS" />
+				</Compiler>
+				<Linker>
+					<Add option="/subsystem:windows" />
+					<Add option="/machine:I386" />
+					<Add option='/out:&quot;../bin/VFCTools.exe&quot;' />
+					<Add library="kernel32" />
+					<Add library="user32" />
+					<Add library="gdi32" />
+					<Add library="winspool" />
+					<Add library="comdlg32" />
+					<Add library="advapi32" />
+					<Add library="shell32" />
+					<Add library="ole32" />
+					<Add library="oleaut32" />
+					<Add library="uuid" />
+					<Add library="odbc32" />
+					<Add library="odbccp32" />
+					<Add library="shlwapi" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add directory="D:/dev/sdk/WTL71/include" />
+		</Compiler>
+		<ResourceCompiler>
+			<Add directory="D:/dev/sdk/WTL71/include" />
+		</ResourceCompiler>
+		<Unit filename="ReadMe.txt" />
+		<Unit filename="StdAfx.cpp" />
+		<Unit filename="StdAfx.h" />
+		<Unit filename="VFCTools.cpp" />
+		<Unit filename="VFCTools.rc">
+			<Option compilerVar="WINDRES" />
+		</Unit>
+		<Unit filename="icon1.ico" />
+		<Unit filename="tools_addin.cpp" />
+		<Unit filename="tools_addin.h" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
