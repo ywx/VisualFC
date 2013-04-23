@@ -74,9 +74,8 @@
 					<Add option="/D_UNICODE" />
 					<Add option="/D_ATL_STATIC_REGISTRY" />
 					<Add option="/FD" />
-					<Add option="/MD" />
 					<Add option="/FR" />
-					<Add option="/Zm128" />
+					<Add option="/Zm256" />
 					<Add directory="../include" />
 					<Add directory="../public" />
 				</Compiler>
@@ -84,7 +83,9 @@
 					<Add option="/subsystem:windows" />
 					<Add option="/dll" />
 					<Add option="/machine:I386" />
-					<Add option='/out:&quot;../bin/VFC_Core.dll&quot;' />
+					<Add option='/def:&quot;./FCWizard.def&quot;' />
+					<Add option='/out:&quot;../bin/VFC_CoreU.dll&quot;' />
+					<Add option='/implib:&quot;../bin/VFC_CoreU.lib&quot;' />
 					<Add library="kernel32" />
 					<Add library="user32" />
 					<Add library="gdi32" />

@@ -43,4 +43,5 @@ public:
 
 	CResMenu& operator =(const CResMenu& parmenu);
 	bool Load(CTextFile &file);
+	void ListMenuItem( CAtlArray< ResMenuItem > & arrayMenuItem );
 };

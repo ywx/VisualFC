@@ -124,3 +124,22 @@ bool CResMenu::Load(CTextFile &file)
 	}
 	return false;
 }
+
+void CResMenu::ListMenuItem( CAtlArray< ResMenuItem > & arrayMenuItem )
+{
+	for( size_t i = 0; i < m_vItems.GetCount(); ++i )
+	{
+		ResMenuItem newitem = m_vItems.GetAt(i);
+		if ( ! newitem.m_ID.IsEmpty() )
+		{
+			arrayMenuItem.Add( newitem );
+		}
+	}
+
+	for( size_t j = 0; j < m_SubMenus.GetCount(); ++j )
+	{
+		//m_SubMenus.GetAt(j).ListMenuItem( arrayMenuItem );
+		CResMenu subMenu = m_SubMenus.GetAt(j);
+		subMenu.ListMenuItem( arrayMenuItem );
+	}
+}

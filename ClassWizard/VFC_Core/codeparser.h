@@ -973,21 +973,12 @@ public:
 	template <typename FUNC>
 	bool EnumResMenuItem(const CResMenu * menu, FUNC & Process)
 	{
-		for (size_t i = 0; i < menu->GetCount(); i++)
+		CResMenu * pMenu = ( CResMenu * ) menu;
+		CAtlArray< ResMenuItem > arrayMenuItem;
+		pMenu->ListMenuItem( arrayMenuItem );
+		for( size_t i = 0; i < arrayMenuItem.GetCount(); ++i )
 		{
-			if (!menu->m_ID.IsEmpty())
-			{
-				Process(&menu->GetAt(i));
-			}
-		}
-		for (size_t j = 0; j < menu->m_SubMenus.GetCount(); j++)
-		{
-			const CResMenu & subMenu = menu->m_SubMenus.GetAt(j);
-			for (size_t k = 0; k < subMenu.GetCount(); k++)
-			{
-				if (!subMenu.GetAt(k).m_ID.IsEmpty())
-					Process(&subMenu.GetAt(k));
-			}
+			Process( & arrayMenuItem.GetAt(i) );
 		}
 		return true;
 	}
