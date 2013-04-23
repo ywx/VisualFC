@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="VFC_Core" />
+		<Option pch_mode="2" />
+		<Option compiler="microsoft_visual_c_2003" />
+		<Build>
+			<Target title="Win32 AnsiRelease">
+				<Option output="../bin/VFC_Core" prefix_auto="1" extension_auto="1" />
+				<Option object_output="AnsiRelease" />
+				<Option type="3" />
+				<Option compiler="microsoft_visual_c_2003" />
+				<Option createDefFile="1" />
+				<Option createStaticLib="1" />
+				<Compiler>
+					<Add option="/MD" />
+					<Add option="/O1" />
+					<Add option="/W3" />
+					<Add option="/FD" />
+					<Add option="/Zm256" />
+					<Add option="/DWIN32" />
+					<Add option="/DNDEBUG" />
+					<Add option="/D_WINDOWS" />
+					<Add option="/D_USRDLL" />
+					<Add option="/D_MBCS" />
+					<Add directory="../include" />
+					<Add directory="../public" />
+					<Add directory="D:/dev/sdk/wxMSW-2.8.12/include" />
+					<Add directory="D:/dev/sdk/wxMSW-2.8.12/lib/vc_libvc71/msw" />
+				</Compiler>
+				<ResourceCompiler>
+					<Add directory="D:/dev/sdk/wxMSW-2.8.12/include" />
+					<Add directory="D:/dev/sdk/wxMSW-2.8.12/lib/vc_libvc71/msw" />
+				</ResourceCompiler>
+				<Linker>
+					<Add option="/subsystem:windows" />
+					<Add option="/dll" />
+					<Add option="/machine:I386" />
+					<Add option='/def:&quot;./FCWizard.def&quot;' />
+					<Add option='/out:&quot;../bin/VFC_Core.dll&quot;' />
+					<Add option='/implib:&quot;../bin/VFC_Core.lib&quot;' />
+					<Add library="kernel32" />
+					<Add library="user32" />
+					<Add library="gdi32" />
+					<Add library="winspool" />
+					<Add library="comdlg32" />
+					<Add library="advapi32" />
+					<Add library="shell32" />
+					<Add library="ole32" />
+					<Add library="oleaut32" />
+					<Add library="uuid" />
+					<Add library="odbc32" />
+					<Add library="odbccp32" />
+					<Add library="wxbase28" />
+					<Add directory="D:/dev/sdk/wxMSW-2.8.12/lib/vc_libvc71" />
+				</Linker>
+			</Target>
+			<Target title="Win32 Release">
+				<Option output="../bin/VFC_CoreU" prefix_auto="1" extension_auto="1" />
+				<Option object_output="ReleaseU" />
+				<Option type="3" />
+				<Option compiler="microsoft_visual_c_2003" />
+				<Option createDefFile="1" />
+				<Option createStaticLib="1" />
+				<Compiler>
+					<Add option="/MT" />
+					<Add option="/W3" />
+					<Add option="/O1" />
+					<Add option="/DWIN32" />
+					<Add option="/DNDEBUG" />
+					<Add option="/D_WINDOWS" />
+					<Add option="/D_USRDLL" />
+					<Add option="/D_UNICODE" />
+					<Add option="/D_ATL_STATIC_REGISTRY" />
+					<Add option="/FD" />
+					<Add option="/MD" />
+					<Add option="/FR" />
+					<Add option="/Zm128" />
+					<Add directory="../include" />
+					<Add directory="../public" />
+				</Compiler>
+				<Linker>
+					<Add option="/subsystem:windows" />
+					<Add option="/dll" />
+					<Add option="/machine:I386" />
+					<Add option='/out:&quot;../bin/VFC_Core.dll&quot;' />
+					<Add library="kernel32" />
+					<Add library="user32" />
+					<Add library="gdi32" />
+					<Add library="winspool" />
+					<Add library="comdlg32" />
+					<Add library="advapi32" />
+					<Add library="shell32" />
+					<Add library="ole32" />
+					<Add library="oleaut32" />
+					<Add library="uuid" />
+					<Add library="odbc32" />
+					<Add library="odbccp32" />
+				</Linker>
+			</Target>
+			<Target title="Win32 AnsiRelease Static">
+				<Option output="../bin/VFC_Core" prefix_auto="1" extension_auto="1" />
+				<Option object_output="AnsiReleaseStatic" />
+				<Option type="3" />
+				<Option compiler="microsoft_visual_c_2003" />
+				<Option createDefFile="1" />
+				<Option createStaticLib="1" />
+				<Compiler>
+					<Add option="/MT" />
+					<Add option="/O1" />
+					<Add option="/W3" />
+					<Add option="/FD" />
+					<Add option="/Zm256" />
+					<Add option="/DWIN32" />
+					<Add option="/DNDEBUG" />
+					<Add option="/D_WINDOWS" />
+					<Add option="/D_USRDLL" />
+					<Add option="/D_MBCS" />
+					<Add directory="../include" />
+					<Add directory="../public" />
+					<Add directory="D:/dev/sdk/wxMSW-2.8.12/include" />
+					<Add directory="D:/dev/sdk/wxMSW-2.8.12/lib/vc_libvc71mt/msw" />
+				</Compiler>
+				<ResourceCompiler>
+					<Add directory="D:/dev/sdk/wxMSW-2.8.12/include" />
+					<Add directory="D:/dev/sdk/wxMSW-2.8.12/lib/vc_libvc71mt/msw" />
+				</ResourceCompiler>
+				<Linker>
+					<Add option="/subsystem:windows" />
+					<Add option="/dll" />
+					<Add option="/machine:I386" />
+					<Add option='/def:&quot;./FCWizard.def&quot;' />
+					<Add option='/out:&quot;../bin/VFC_Core.dll&quot;' />
+					<Add option='/implib:&quot;../bin/VFC_Core.lib&quot;' />
+					<Add library="kernel32" />
+					<Add library="user32" />
+					<Add library="gdi32" />
+					<Add library="winspool" />
+					<Add library="comdlg32" />
+					<Add library="advapi32" />
+					<Add library="shell32" />
+					<Add library="ole32" />
+					<Add library="oleaut32" />
+					<Add library="uuid" />
+					<Add library="odbc32" />
+					<Add library="odbccp32" />
+					<Add library="wxbase28" />
+					<Add directory="D:/dev/sdk/wxMSW-2.8.12/lib/vc_libvc71mt" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="/EHsc" />
+			<Add directory="D:/dev/sdk/WTL81/include" />
+		</Compiler>
+		<ResourceCompiler>
+			<Add directory="D:/dev/sdk/WTL81/include" />
+		</ResourceCompiler>
+		<Unit filename="../public/atltabex.h" />
+		<Unit filename="FCWizard.cpp" />
+		<Unit filename="FCWizard.def" />
+		<Unit filename="FCWizard.idl" />
+		<Unit filename="FCWizard.rc">
+			<Option compilerVar="WINDRES" />
+		</Unit>
+		<Unit filename="StdAfx.cpp" />
+		<Unit filename="StdAfx.h" />
+		<Unit filename="cbparser/parserthread.cpp" />
+		<Unit filename="cbparser/token.cpp" />
+		<Unit filename="cbparser/tokenizer.cpp" />
+		<Unit filename="codeparser.h" />
+		<Unit filename="codeupdate.h" />
+		<Unit filename="datalist_t.h" />
+		<Unit filename="dspparser.h" />
+		<Unit filename="image.bmp" />
+		<Unit filename="page_appwizard.h" />
+		<Unit filename="page_base_t.h" />
+		<Unit filename="page_class_info.h" />
+		<Unit filename="page_ddx_t.h" />
+		<Unit filename="page_ddx_template.h" />
+		<Unit filename="page_dlsz_t.h" />
+		<Unit filename="page_event_t.h" />
+		<Unit filename="page_font_t.h" />
+		<Unit filename="page_notify_t.h" />
+		<Unit filename="page_setup.h" />
+		<Unit filename="page_tools.h" />
+		<Unit filename="page_upui_t.h" />
+		<Unit filename="page_winx_ddx.h" />
+		<Unit filename="page_winx_dlsz.h" />
+		<Unit filename="page_winx_event.h" />
+		<Unit filename="page_winx_font.h" />
+		<Unit filename="page_winx_notify.h" />
+		<Unit filename="page_winx_upui.h" />
+		<Unit filename="page_wtl_ddx.h" />
+		<Unit filename="page_wtl_dlsz.h" />
+		<Unit filename="page_wtl_event.h" />
+		<Unit filename="page_wtl_font.h" />
+		<Unit filename="page_wtl_notify.h" />
+		<Unit filename="page_wtl_upui.h" />
+		<Unit filename="prop_too.bmp" />
+		<Unit filename="resource.h" />
+		<Unit filename="resources/ResAccelerators.cpp" />
+		<Unit filename="resources/ResDialog.cpp" />
+		<Unit filename="resources/ResMenu.cpp" />
+		<Unit filename="resources/ResToolbar.cpp" />
+		<Unit filename="resources/Resources.cpp" />
+		<Unit filename="vfc_config.h" />
+		<Unit filename="win32_notify.h" />
+		<Unit filename="winx_event.h" />
+		<Unit filename="wizardui.h" />
+		<Unit filename="wtl_event.h" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
